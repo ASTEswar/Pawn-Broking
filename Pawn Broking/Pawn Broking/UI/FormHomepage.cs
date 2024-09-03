@@ -21,5 +21,10 @@ namespace Pawn_Broking.UI
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

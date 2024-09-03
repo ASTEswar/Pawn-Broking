@@ -47,6 +47,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -258,11 +259,27 @@
             this.kryptonButton1.TabIndex = 25;
             this.kryptonButton1.Values.Text = "   ரத்து செய்ய ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Linen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(347, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 32);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "      சேமிக்க ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // formhomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -298,5 +315,6 @@
         private System.Windows.Forms.ToolStripMenuItem handLoanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem handLoanReturnToolStripMenuItem;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.Button button1;
     }
 }
