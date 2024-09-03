@@ -184,14 +184,10 @@
             this.Controls.Add(this.label1);
             this.Name = "CustomSearchEng";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.Rounding = 4;
-            this.StateCommon.Header.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.StateCommon.Header.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            //| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            //| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            //| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            //| ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.Text = "CustomSearchEng";
             this.Load += new System.EventHandler(this.CustomSearchEng_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

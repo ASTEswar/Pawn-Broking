@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+//using ComponentFactory.Krypton.Toolkit;
 
 
 namespace Pawn_Broking.UI
 {
-    public partial class CustomSearchEng : KryptonForm
+    public partial class CustomSearchEng : Form
     {
         public CustomSearchEng()
         {
