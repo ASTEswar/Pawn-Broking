@@ -185,11 +185,11 @@
     <Compile Include="Accounts UI\RecieptreportForm1.Designer.cs">
       <DependentUpon>RecieptreportForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Loan Form.cs">
+    <Compile Include="UI\LoanForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Loan Form.Designer.cs">
-      <DependentUpon>Loan Form.cs</DependentUpon>
+    <Compile Include="UI\LoanForm.Designer.cs">
+      <DependentUpon>LoanForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -248,8 +248,8 @@
     <EmbeddedResource Include="Accounts UI\RecieptreportForm1.resx">
       <DependentUpon>RecieptreportForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Loan Form.resx">
-      <DependentUpon>Loan Form.cs</DependentUpon>
+    <EmbeddedResource Include="UI\LoanForm.resx">
+      <DependentUpon>LoanForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

@@ -289,6 +289,7 @@
             this.Controls.Add(this.panel4);
             this.Name = "DaybookentryForm1";
             this.Text = "DaybookentryForm1";
+            this.Load += new System.EventHandler(this.DaybookentryForm1_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

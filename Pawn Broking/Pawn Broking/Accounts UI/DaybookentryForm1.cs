@@ -56,5 +56,10 @@ namespace Pawn_Broking.UI
         {
 
         }
+
+        private void DaybookentryForm1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
