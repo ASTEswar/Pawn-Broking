@@ -76,40 +76,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UI\BalanceForm1.cs">
+    <Compile Include="Accounts Report UI\Customer_Balance_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\BalanceForm1.Designer.cs">
-      <DependentUpon>BalanceForm1.cs</DependentUpon>
+    <Compile Include="Accounts Report UI\Customer_Balance_Form.Designer.cs">
+      <DependentUpon>Customer_Balance_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\BanktransactionForm1.cs">
+    <Compile Include="Accounts UI\BanktransactionForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\BanktransactionForm1.Designer.cs">
+    <Compile Include="Accounts UI\BanktransactionForm1.Designer.cs">
       <DependentUpon>BanktransactionForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\CustomChange.cs">
+    <Compile Include="Master UI\CustomChange.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\CustomChange.Designer.cs">
+    <Compile Include="Master UI\CustomChange.Designer.cs">
       <DependentUpon>CustomChange.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\CustomSearchEng.cs">
+    <Compile Include="Master UI\CustomSearchEng.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\CustomSearchEng.Designer.cs">
+    <Compile Include="Master UI\CustomSearchEng.Designer.cs">
       <DependentUpon>CustomSearchEng.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\DaybookentryForm1.cs">
+    <Compile Include="Accounts UI\DaybookentryForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\DaybookentryForm1.Designer.cs">
+    <Compile Include="Accounts UI\DaybookentryForm1.Designer.cs">
       <DependentUpon>DaybookentryForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\DaybookForm1.cs">
+    <Compile Include="Accounts Report UI\DaybookForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\DaybookForm1.Designer.cs">
+    <Compile Include="Accounts Report UI\DaybookForm1.Designer.cs">
       <DependentUpon>DaybookForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\formhomepage.cs">
@@ -118,10 +118,10 @@
     <Compile Include="UI\formhomepage.Designer.cs">
       <DependentUpon>formhomepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\formitemdeatails.cs">
+    <Compile Include="Master UI\formitemdeatails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\formitemdeatails.Designer.cs">
+    <Compile Include="Master UI\formitemdeatails.Designer.cs">
       <DependentUpon>formitemdeatails.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmLogin.cs">
@@ -143,52 +143,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\LedgerForm.cs">
+    <Compile Include="Master UI\LedgerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\LedgerForm.Designer.cs">
+    <Compile Include="Master UI\LedgerForm.Designer.cs">
       <DependentUpon>LedgerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\LedgerstatmentForm1.cs">
+    <Compile Include="Accounts Report UI\LedgerstatmentForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\LedgerstatmentForm1.Designer.cs">
+    <Compile Include="Accounts Report UI\LedgerstatmentForm1.Designer.cs">
       <DependentUpon>LedgerstatmentForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\LoanForm.cs">
+    <Compile Include="Accounts Report UI\PartybalanceForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\LoanForm.Designer.cs">
-      <DependentUpon>LoanForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\PartybalanceForm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\PartybalanceForm1.Designer.cs">
+    <Compile Include="Accounts Report UI\PartybalanceForm1.Designer.cs">
       <DependentUpon>PartybalanceForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\PaymententryForm1.cs">
+    <Compile Include="Accounts UI\PaymententryForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\PaymententryForm1.Designer.cs">
+    <Compile Include="Accounts UI\PaymententryForm1.Designer.cs">
       <DependentUpon>PaymententryForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\PaymentreportForm1.cs">
+    <Compile Include="Accounts UI\PaymentreportForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\PaymentreportForm1.Designer.cs">
+    <Compile Include="Accounts UI\PaymentreportForm1.Designer.cs">
       <DependentUpon>PaymentreportForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\ReceiptentrysForm1.cs">
+    <Compile Include="Accounts UI\ReceiptentrysForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\ReceiptentrysForm1.Designer.cs">
+    <Compile Include="Accounts UI\ReceiptentrysForm1.Designer.cs">
       <DependentUpon>ReceiptentrysForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\RecieptreportForm1.cs">
+    <Compile Include="Accounts UI\RecieptreportForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\RecieptreportForm1.Designer.cs">
+    <Compile Include="Accounts UI\RecieptreportForm1.Designer.cs">
       <DependentUpon>RecieptreportForm1.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -196,28 +190,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\BalanceForm1.resx">
-      <DependentUpon>BalanceForm1.cs</DependentUpon>
+    <EmbeddedResource Include="Accounts Report UI\Customer_Balance_Form.resx">
+      <DependentUpon>Customer_Balance_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\BanktransactionForm1.resx">
+    <EmbeddedResource Include="Accounts UI\BanktransactionForm1.resx">
       <DependentUpon>BanktransactionForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\CustomChange.resx">
+    <EmbeddedResource Include="Master UI\CustomChange.resx">
       <DependentUpon>CustomChange.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\CustomSearchEng.resx">
+    <EmbeddedResource Include="Master UI\CustomSearchEng.resx">
       <DependentUpon>CustomSearchEng.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\DaybookentryForm1.resx">
+    <EmbeddedResource Include="Accounts UI\DaybookentryForm1.resx">
       <DependentUpon>DaybookentryForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\DaybookForm1.resx">
+    <EmbeddedResource Include="Accounts Report UI\DaybookForm1.resx">
       <DependentUpon>DaybookForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\formhomepage.resx">
       <DependentUpon>formhomepage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\formitemdeatails.resx">
+    <EmbeddedResource Include="Master UI\formitemdeatails.resx">
       <DependentUpon>formitemdeatails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmLogin.resx">
@@ -227,34 +221,29 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\LedgerForm.resx">
+    <EmbeddedResource Include="Master UI\LedgerForm.resx">
       <DependentUpon>LedgerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\LedgerstatmentForm1.resx">
+    <EmbeddedResource Include="Accounts Report UI\LedgerstatmentForm1.resx">
       <DependentUpon>LedgerstatmentForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\LoanForm.resx">
-      <DependentUpon>LoanForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\PartybalanceForm1.resx">
+    <EmbeddedResource Include="Accounts Report UI\PartybalanceForm1.resx">
       <DependentUpon>PartybalanceForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\PaymententryForm1.resx">
+    <EmbeddedResource Include="Accounts UI\PaymententryForm1.resx">
       <DependentUpon>PaymententryForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\PaymentreportForm1.resx">
+    <EmbeddedResource Include="Accounts UI\PaymentreportForm1.resx">
       <DependentUpon>PaymentreportForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\ReceiptentrysForm1.resx">
+    <EmbeddedResource Include="Accounts UI\ReceiptentrysForm1.resx">
       <DependentUpon>ReceiptentrysForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\RecieptreportForm1.resx">
+    <EmbeddedResource Include="Accounts UI\RecieptreportForm1.resx">
       <DependentUpon>RecieptreportForm1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Icons\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\gif 3.gif" />
   </ItemGroup>

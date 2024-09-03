@@ -1,6 +1,6 @@
 ﻿namespace Pawn_Broking.UI
 {
-    partial class BalanceForm1
+    partial class Customer_Balance_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -49,7 +49,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(165, 72);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(132, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(178, 20);
             this.dateTimePicker1.TabIndex = 70;
             // 
             // label3
@@ -72,7 +72,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(688, 340);
             this.dataGridView1.TabIndex = 74;
             // 
-            // BalanceForm1
+            // Customer_Balance_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,8 +81,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
-            this.Name = "BalanceForm1";
+            this.Name = "Customer_Balance_Form";
             this.Text = "BalanceForm1";
+            this.Load += new System.EventHandler(this.Customer_Balance_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

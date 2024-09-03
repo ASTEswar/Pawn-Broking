@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Pawn_Broking.UI
 {
-    public partial class BalanceForm1 : Form
+    public partial class Customer_Balance_Form : Form
     {
-        public BalanceForm1()
+        public Customer_Balance_Form()
         {
             InitializeComponent();
+        }
+
+        private void Customer_Balance_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

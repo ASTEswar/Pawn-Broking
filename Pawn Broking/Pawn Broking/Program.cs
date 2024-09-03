@@ -19,7 +19,7 @@ namespace Pawn_Broking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formhomepage());
+            Application.Run(new Customer_Balance_Form());
         }
     }
 }

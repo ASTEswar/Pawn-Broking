@@ -46,14 +46,12 @@
             this.handLoanReturnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(106, 253);
+            this.kryptonButton3.Location = new System.Drawing.Point(239, 161);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -76,7 +74,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(230, 253);
+            this.kryptonButton2.Location = new System.Drawing.Point(363, 161);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -170,42 +168,43 @@
             // 
             this.loanToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loanToolStripMenuItem.Text = "Loan";
+            this.loanToolStripMenuItem.Click += new System.EventHandler(this.loanToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "Photo";
             // 
             // loanDetailsToolStripMenuItem
             // 
             this.loanDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loanDetailsToolStripMenuItem.Name = "loanDetailsToolStripMenuItem";
-            this.loanDetailsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.loanDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loanDetailsToolStripMenuItem.Text = "Loan details";
             // 
             // actionDetailsToolStripMenuItem
             // 
             this.actionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionDetailsToolStripMenuItem.Name = "actionDetailsToolStripMenuItem";
-            this.actionDetailsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.actionDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.actionDetailsToolStripMenuItem.Text = "Action details";
             // 
             // handLoanToolStripMenuItem
             // 
             this.handLoanToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.handLoanToolStripMenuItem.Name = "handLoanToolStripMenuItem";
-            this.handLoanToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.handLoanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.handLoanToolStripMenuItem.Text = "Hand Loan";
             // 
             // handLoanReturnToolStripMenuItem
             // 
             this.handLoanReturnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.handLoanReturnToolStripMenuItem.Name = "handLoanReturnToolStripMenuItem";
-            this.handLoanReturnToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.handLoanReturnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.handLoanReturnToolStripMenuItem.Text = "Hand Loan Return";
             // 
             // button3
@@ -215,7 +214,7 @@
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(266, 337);
+            this.button3.Location = new System.Drawing.Point(374, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 32);
             this.button3.TabIndex = 23;
@@ -228,59 +227,18 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(164, 337);
+            this.button2.Location = new System.Drawing.Point(239, 224);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 32);
             this.button2.TabIndex = 22;
             this.button2.Text = "   மாற்ற ";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Location = new System.Drawing.Point(393, 253);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonButton1.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.Size = new System.Drawing.Size(130, 33);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton1.StateCommon.Back.Image")));
-            this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 7;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Black", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.kryptonButton1.TabIndex = 25;
-            this.kryptonButton1.Values.Text = "   ரத்து செய்ய ";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Linen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(347, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 32);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "      சேமிக்க ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // formhomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.kryptonButton3);
@@ -314,7 +272,5 @@
         private System.Windows.Forms.ToolStripMenuItem actionDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem handLoanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem handLoanReturnToolStripMenuItem;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private System.Windows.Forms.Button button1;
     }
 }

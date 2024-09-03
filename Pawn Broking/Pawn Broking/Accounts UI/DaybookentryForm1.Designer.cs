@@ -48,7 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -262,7 +261,7 @@
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.kryptonButton4.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton4.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonButton4.Size = new System.Drawing.Size(108, 33);
+            this.kryptonButton4.Size = new System.Drawing.Size(83, 28);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.kryptonButton4.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
@@ -270,25 +269,17 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton4.StateCommon.Border.Rounding = 7;
-            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton4.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.Lime;
             this.kryptonButton4.TabIndex = 67;
             this.kryptonButton4.Values.Text = "Show";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(777, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(81, 20);
-            this.textBox6.TabIndex = 86;
             // 
             // DaybookentryForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 613);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.kryptonButton4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
@@ -328,6 +319,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
     }
 }
