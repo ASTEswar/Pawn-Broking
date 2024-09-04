@@ -88,6 +88,8 @@
     <Compile Include="Accounts UI\BanktransactionForm1.Designer.cs">
       <DependentUpon>BanktransactionForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLL\ItemDetailBLL.cs" />
+    <Compile Include="DAL\ItemDetailDAL.cs" />
     <Compile Include="Master UI\Custom_Details_Change.cs">
       <SubType>Form</SubType>
     </Compile>

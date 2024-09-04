@@ -30,8 +30,8 @@ namespace Pawn_Broking.UI
 
         private void loanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Loan_Form loan_Form = new Loan_Form();
-            loan_Form.Show();
+            Loan_Form loanForm = new Loan_Form();
+            loanForm.Show();
         }
 
         private void customerSearchEngineToolStripMenuItem_Click(object sender, EventArgs e)
