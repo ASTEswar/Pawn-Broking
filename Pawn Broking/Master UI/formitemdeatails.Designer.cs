@@ -236,6 +236,9 @@
             this.kryptonTextBox1.StateCommon.Border.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
             this.kryptonTextBox1.StateCommon.Border.ColorAngle = 8F;
             this.kryptonTextBox1.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Switch25;
+            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonTextBox1.StateCommon.Border.Rounding = 6;
             this.kryptonTextBox1.StateCommon.Border.Width = 1;
@@ -250,7 +253,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(574, 339);
+            this.ClientSize = new System.Drawing.Size(574, 321);
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.panelFind);
             this.Controls.Add(this.cmbitemtype);
