@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "பொருள் விபரம் ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -64,7 +63,6 @@
             this.label2.Size = new System.Drawing.Size(47, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "எண் ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtID
             // 
@@ -115,7 +113,6 @@
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "   மாற்ற ";
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnSave
             // 
@@ -194,7 +191,6 @@
             this.Name = "formitemdeatails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item Detail";
-            this.Load += new System.EventHandler(this.formitemdeatails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,58 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Pawn_Broking.BLL;
+using Pawn_Broking.DAL;
 
 namespace Pawn_Broking.UI
 {
     public partial class formitemdeatails : Form
     {
-        private SqlDataAdapter adapter = new SqlDataAdapter();
-        private DataSet ds = new DataSet();
-        private SqlConnection dbcon = new SqlConnection("Data Source=DESKTOP-6JKB17U\\SQL;Initial Catalog=PawnBrokingNew;User ID=sa;Password=1234;");
+        private ItemDetailDAL dal = new ItemDetailDAL();
         private bool SaveFlg = false;
+
         public formitemdeatails()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void formitemdeatails_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void Store()
-        {
-            DataRow row = ds.Tables[0].NewRow();
-            row["ItemType"] = cmbitemtype.Text.Trim();
-            row["ItemName"] = txtItemName.Text.Trim();
-            ds.Tables[0].Rows.Add(row);
-        }
+        ItemDetailBLL item = new ItemDetailBLL();
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtItemName.Text))
@@ -61,33 +25,51 @@ namespace Pawn_Broking.UI
                 txtItemName.Focus();
                 return;
             }
-
+            item.ItemName = txtItemName.Text;
+            item.ItemType = cmbitemtype.Text;
+            bool success;
             if (!SaveFlg)
             {
-                using (SqlCommand cmd = new SqlCommand("select * from ItemDetail", dbcon))
-                {
-                    adapter.SelectCommand = cmd;
-                    adapter.Fill(ds);
-                    Store();
-                  //  adapter.Update(ds);
-                    MessageBox.Show("One Record Inserted", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                // Insert new record
+                success = dal.Insert(item);
+                MessageBox.Show(success ? "One Record Inserted" : "Insertion Failed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                using (SqlCommand cmd = new SqlCommand("select * from ItemDetail where ItemCode=@ItemCode", dbcon))
-                {
-                    cmd.Parameters.AddWithValue("@ItemCode", Convert.ToInt32(txtID.Text));
-                    adapter.SelectCommand = cmd;
-                    adapter.Fill(ds);
-                    Store();
-                    adapter.Update(ds);
-                    MessageBox.Show("One Record Updated", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                // Update existing record
+                item.ItemCode = Convert.ToInt32(txtID.Text);
+                success = dal.Update(item);
+                MessageBox.Show(success ? "One Record Updated" : "Update Failed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            //btnReset_Click(sender, e);
-            btnEdit.Focus();
+            // Reset the form
+            btnReset_Click(sender, e);
+        }
+
+        //private void btnFind_Click(object sender, EventArgs e)
+        //{
+        //    int itemCode = Convert.ToInt32(txtID.Text);
+
+        //    DataTable dt = dal.GetItemDetailByCode(itemCode);
+        //    if (dt.Rows.Count > 0)
+        //    {
+        //        txtID.Text = dt.Rows[0]["ItemCode"].ToString();
+        //        cmbitemtype.Text = dt.Rows[0]["ItemType"].ToString();
+        //        txtItemName.Text = dt.Rows[0]["ItemName"].ToString();
+        //        SaveFlg = true;
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Record Not Found", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //    }
+        //}
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "";
+            txtItemName.Text = "";
+            cmbitemtype.SelectedIndex = -1;
+            SaveFlg = false;
         }
     }
 }
