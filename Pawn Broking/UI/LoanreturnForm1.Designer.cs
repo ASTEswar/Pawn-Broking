@@ -110,7 +110,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(875, 161);
+            this.dataGridView2.Location = new System.Drawing.Point(1016, 142);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(292, 150);
             this.dataGridView2.TabIndex = 53;
@@ -122,7 +122,7 @@
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.label17);
-            this.panel7.Location = new System.Drawing.Point(-125, 561);
+            this.panel7.Location = new System.Drawing.Point(15, 542);
             this.panel7.Margin = new System.Windows.Forms.Padding(6);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(6);
@@ -187,7 +187,7 @@
             this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.textBox15);
             this.panel6.Controls.Add(this.label22);
-            this.panel6.Location = new System.Drawing.Point(-125, 561);
+            this.panel6.Location = new System.Drawing.Point(15, 542);
             this.panel6.Margin = new System.Windows.Forms.Padding(6);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(6);
@@ -386,7 +386,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(-125, 43);
+            this.panel1.Location = new System.Drawing.Point(15, 24);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(6);
@@ -402,11 +402,11 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.panel2);
-            this.panel4.Location = new System.Drawing.Point(-126, 43);
+            this.panel4.Location = new System.Drawing.Point(14, 24);
             this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(6);
-            this.panel4.Size = new System.Drawing.Size(990, 663);
+            this.panel4.Size = new System.Drawing.Size(991, 663);
             this.panel4.TabIndex = 49;
             // 
             // textBox13
@@ -471,7 +471,7 @@
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(6);
-            this.panel2.Size = new System.Drawing.Size(990, 231);
+            this.panel2.Size = new System.Drawing.Size(991, 231);
             this.panel2.TabIndex = 6;
             // 
             // label16
@@ -586,7 +586,7 @@
             this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(6);
-            this.panel5.Size = new System.Drawing.Size(641, 69);
+            this.panel5.Size = new System.Drawing.Size(642, 69);
             this.panel5.TabIndex = 8;
             // 
             // label11
@@ -730,7 +730,7 @@
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(957, 519);
+            this.kryptonButton5.Location = new System.Drawing.Point(1097, 500);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.kryptonButton5.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -753,7 +753,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(945, 581);
+            this.kryptonButton2.Location = new System.Drawing.Point(1085, 562);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -777,7 +777,7 @@
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(945, 399);
+            this.kryptonButton4.Location = new System.Drawing.Point(1085, 380);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -800,7 +800,7 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(962, 460);
+            this.kryptonButton3.Location = new System.Drawing.Point(1102, 441);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -825,7 +825,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 749);
+            this.ClientSize = new System.Drawing.Size(1324, 712);
             this.Controls.Add(this.kryptonButton5);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton4);
@@ -837,6 +837,7 @@
             this.Controls.Add(this.panel4);
             this.Name = "Loan2returnForm1";
             this.Text = "LoanreturnForm1";
+            this.Load += new System.EventHandler(this.Loan2returnForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();

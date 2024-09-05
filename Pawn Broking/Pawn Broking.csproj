@@ -133,6 +133,18 @@
     <Compile Include="Master UI\formitemdeatails.Designer.cs">
       <DependentUpon>formitemdeatails.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\LoanactionrptForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoanactionrptForm1.Designer.cs">
+      <DependentUpon>LoanactionrptForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoanregisterForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoanregisterForm1.Designer.cs">
+      <DependentUpon>LoanregisterForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\LoanreturnForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +243,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master UI\formitemdeatails.resx">
       <DependentUpon>formitemdeatails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoanactionrptForm1.resx">
+      <DependentUpon>LoanactionrptForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoanregisterForm1.resx">
+      <DependentUpon>LoanregisterForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\LoanreturnForm1.resx">
       <DependentUpon>LoanreturnForm1.cs</DependentUpon>

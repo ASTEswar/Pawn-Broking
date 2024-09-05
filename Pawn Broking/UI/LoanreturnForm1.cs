@@ -31,5 +31,10 @@ namespace Pawn_Broking.UI
         {
 
         }
+
+        private void Loan2returnForm1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
