@@ -15,6 +15,30 @@ namespace Pawn_Broking.DAL
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
+        #region Select Data from Database
+        public DataTable Select()
+        {
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM ItemDetail";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion
         public bool Insert(ItemDetailBLL item)
         {
             bool isSucces = false;

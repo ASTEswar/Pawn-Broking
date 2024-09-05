@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Drawing;
 using Pawn_Broking.BLL;
 using Pawn_Broking.DAL;
 
@@ -8,15 +9,13 @@ namespace Pawn_Broking.UI
 {
     public partial class formitemdeatails : Form
     {
-        private ItemDetailDAL dal = new ItemDetailDAL();
-        private bool SaveFlg = false;
-
         public formitemdeatails()
         {
             InitializeComponent();
         }
 
         ItemDetailBLL item = new ItemDetailBLL();
+        ItemDetailDAL dal = new ItemDetailDAL();
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtItemName.Text))
@@ -25,51 +24,48 @@ namespace Pawn_Broking.UI
                 txtItemName.Focus();
                 return;
             }
+
             item.ItemName = txtItemName.Text;
             item.ItemType = cmbitemtype.Text;
-            bool success;
-            if (!SaveFlg)
+
+            bool success = dal.Insert(item);
+            if (success == true)
             {
-                // Insert new record
-                success = dal.Insert(item);
-                MessageBox.Show(success ? "One Record Inserted" : "Insertion Failed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("New Item Successfully added", "Item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clear();
             }
             else
             {
-                // Update existing record
-                item.ItemCode = Convert.ToInt32(txtID.Text);
-                success = dal.Update(item);
-                MessageBox.Show(success ? "One Record Updated" : "Update Failed", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Failed to add Item", "Item", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            // Reset the form
-            btnReset_Click(sender, e);
         }
 
-        //private void btnFind_Click(object sender, EventArgs e)
-        //{
-        //    int itemCode = Convert.ToInt32(txtID.Text);
-
-        //    DataTable dt = dal.GetItemDetailByCode(itemCode);
-        //    if (dt.Rows.Count > 0)
-        //    {
-        //        txtID.Text = dt.Rows[0]["ItemCode"].ToString();
-        //        cmbitemtype.Text = dt.Rows[0]["ItemType"].ToString();
-        //        txtItemName.Text = dt.Rows[0]["ItemName"].ToString();
-        //        SaveFlg = true;
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Record Not Found", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    }
-        //}
+        private void formitemdeatails_Load(object sender, EventArgs e)
+        {
+            btnEdit.Enabled = false;
+            panelFind.Location = new Point(12, 345);
+        }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            btnEdit.Enabled = false;
+        }
+        private void Clear()
+        {
             txtID.Text = "";
             txtItemName.Text = "";
-            cmbitemtype.SelectedIndex = -1;
-            SaveFlg = false;
+            cmbitemtype.Text = "";
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            panelFind.Location = new Point(12, 23);
+
+            btnEdit.Enabled = true;
+            btnSave.Enabled = false;
+
+            DataTable dt = dal.Select();            
+            dgvItems.DataSource = dt;
         }
     }
 }
