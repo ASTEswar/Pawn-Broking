@@ -6,58 +6,107 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pawn_Broking.BLL;
+using System.Configuration;
+using System.Windows.Forms;
 
 namespace Pawn_Broking.DAL
 {
     internal class ItemDetailDAL
     {
-        private SqlConnection dbcon = new SqlConnection("Data Source=DESKTOP-6JKB17U\\SQL;Initial Catalog=PawnBrokingNew;User ID=sa;Password=1234;");
+        static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
         public bool Insert(ItemDetailBLL item)
         {
-            string query = "INSERT INTO ItemDetail (ItemType, ItemName) VALUES (@ItemType, @ItemName)";
-            using (SqlCommand cmd = new SqlCommand(query, dbcon))
+            bool isSucces = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            try
             {
+                string sql = "INSERT INTO ItemDetail (ItemType, ItemName) VALUES (@ItemType, @ItemName)";
+               
+                SqlCommand cmd = new SqlCommand(sql, conn);
+            
                 cmd.Parameters.AddWithValue("@ItemType", item.ItemType);
                 cmd.Parameters.AddWithValue("@ItemName", item.ItemName);
 
-                dbcon.Open();
-                int rowsAffected = cmd.ExecuteNonQuery();
-                dbcon.Close();
+                conn.Open();
 
-                return rowsAffected > 0;
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    isSucces = true;
+                }
+                else
+                {
+                    isSucces = false;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return isSucces;
         }
 
         public bool Update(ItemDetailBLL item)
         {
-            string query = "UPDATE ItemDetail SET ItemType=@ItemType, ItemName=@ItemName WHERE ItemCode=@ItemCode";
-            using (SqlCommand cmd = new SqlCommand(query, dbcon))
+            bool isSucces = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            try
             {
+                string sql = "UPDATE ItemDetail SET ItemType=@ItemType, ItemName=@ItemName WHERE ItemCode=@ItemCode";
+          
+                SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@ItemType", item.ItemType);
                 cmd.Parameters.AddWithValue("@ItemName", item.ItemName);
                 cmd.Parameters.AddWithValue("@ItemCode", item.ItemCode);
 
-                dbcon.Open();
-                int rowsAffected = cmd.ExecuteNonQuery();
-                dbcon.Close();
+                conn.Open();
 
-                return rowsAffected > 0;
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    isSucces = true;
+                }
+                else
+                {
+                    isSucces = false;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return isSucces;
         }
 
         // Method to Fetch ItemDetail by ItemCode
-        public DataTable GetItemDetailByCode(int itemCode)
-        {
-            string query = "SELECT * FROM ItemDetail WHERE ItemCode=@ItemCode";
-            using (SqlCommand cmd = new SqlCommand(query, dbcon))
-            {
-                cmd.Parameters.AddWithValue("@ItemCode", itemCode);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                return dt;
-            }
-        }
+        //public DataTable GetItemDetailByCode(int itemCode)
+        //{
+        //    string query = "SELECT * FROM ItemDetail WHERE ItemCode=@ItemCode";
+        //    using (SqlCommand cmd = new SqlCommand(query, conn))
+        //    {
+        //        cmd.Parameters.AddWithValue("@ItemCode", itemCode);
+        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+        //        DataTable dt = new DataTable();
+        //        adapter.Fill(dt);
+        //        return dt;
+        //    }
+        //}
     }
 }
