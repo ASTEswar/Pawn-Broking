@@ -49,6 +49,9 @@ namespace Pawn_Broking.UI
         private void btnReset_Click(object sender, EventArgs e)
         {
             btnEdit.Enabled = false;
+            btnSave.Enabled = true;
+            btnFind.Enabled = true;
+            Clear();
         }
         private void Clear()
         {
@@ -66,6 +69,76 @@ namespace Pawn_Broking.UI
 
             DataTable dt = dal.Select();            
             dgvItems.DataSource = dt;
+        }
+   
+        #region DGV Cell Click
+        private void dgvItems_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvItems.Rows.Count)
+            {
+                DataGridViewRow selectedRow = dgvItems.Rows[e.RowIndex];
+
+                txtID.Text = selectedRow.Cells["ItemCode"].Value?.ToString();
+                txtItemName.Text = selectedRow.Cells["ItemName"].Value?.ToString();
+                cmbitemtype.Text = selectedRow.Cells["ItemType"].Value?.ToString();
+
+                panelFind.Location = new Point(12, 345);
+                btnFind.Enabled =false;           
+            }
+        }
+
+        private void dgvItems_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvItems.Rows.Count)
+            {
+                DataGridViewRow selectedRow = dgvItems.Rows[e.RowIndex];
+
+                txtID.Text = selectedRow.Cells["ItemCode"].Value?.ToString();
+                txtItemName.Text = selectedRow.Cells["ItemName"].Value?.ToString();
+                cmbitemtype.Text = selectedRow.Cells["ItemType"].Value?.ToString();
+
+                panelFind.Location = new Point(12, 345);
+                btnFind.Enabled = false;
+            }
+        }
+
+        private void dgvItems_RowHeaderMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvItems.Rows.Count)
+            {
+                DataGridViewRow selectedRow = dgvItems.Rows[e.RowIndex];
+
+                txtID.Text = selectedRow.Cells["ItemCode"].Value?.ToString();
+                txtItemName.Text = selectedRow.Cells["ItemName"].Value?.ToString();
+                cmbitemtype.Text = selectedRow.Cells["ItemType"].Value?.ToString();
+
+                panelFind.Location = new Point(12, 345);
+                btnFind.Enabled = false;
+            }
+        }
+
+        #endregion
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            item.ItemCode = int.Parse(txtID.Text);
+            item.ItemName = txtItemName.Text;
+            item.ItemType = cmbitemtype.Text;
+
+            bool success = dal.Update(item);
+
+            if (success)
+            {
+                MessageBox.Show("Product Updated Successfully");
+                Clear();
+
+                DataTable dt = dal.Select();
+                dgvItems.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("Failed to Update Product");
+            }
         }
     }
 }
