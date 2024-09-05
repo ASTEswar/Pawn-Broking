@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pawn_Broking.UI
 {
-    public partial class LoanreturnForm1 : Form
+    public partial class Loan2returnForm1 : Form
     {
-        public LoanreturnForm1()
+        public Loan2returnForm1()
         {
             InitializeComponent();
         }
