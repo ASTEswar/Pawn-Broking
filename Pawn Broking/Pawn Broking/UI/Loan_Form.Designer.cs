@@ -30,6 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loan_Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -73,44 +88,28 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton5 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -143,6 +142,140 @@
             this.panel1.Size = new System.Drawing.Size(1002, 604);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(846, 576);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(134, 22);
+            this.textBox28.TabIndex = 54;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(835, 539);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(166, 26);
+            this.label32.TabIndex = 55;
+            this.label32.Text = "கொடுக்கப்பட வேண்டிய \r\n                 தொகை  ";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(571, 579);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(112, 15);
+            this.label30.TabIndex = 54;
+            this.label30.Text = "ரசீது  தொகை   ";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(689, 576);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(134, 22);
+            this.textBox26.TabIndex = 53;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(689, 536);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(134, 22);
+            this.textBox27.TabIndex = 52;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(548, 539);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(142, 15);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "பொருளின் மதிப்பு  ";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(282, 575);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(110, 15);
+            this.label28.TabIndex = 50;
+            this.label28.Text = "வட்டி தொகை   ";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(400, 573);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(134, 22);
+            this.textBox24.TabIndex = 49;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(399, 536);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(134, 22);
+            this.textBox25.TabIndex = 48;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(288, 539);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(101, 15);
+            this.label29.TabIndex = 47;
+            this.label29.Text = "வட்டி விகிதம் ";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(9, 420);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(982, 112);
+            this.dataGridView2.TabIndex = 46;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(-2, 573);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(131, 15);
+            this.label26.TabIndex = 42;
+            this.label26.Text = "மொத்த உருப்படி  ";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(134, 570);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(134, 22);
+            this.textBox22.TabIndex = 41;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(134, 539);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(134, 22);
+            this.textBox23.TabIndex = 40;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(78, 541);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 15);
+            this.label27.TabIndex = 39;
+            this.label27.Text = "கிராம் ";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox1
             // 
@@ -578,51 +711,54 @@
             this.panel4.Size = new System.Drawing.Size(1002, 58);
             this.panel4.TabIndex = 3;
             // 
-            // label20
+            // textBox20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(70, 3);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(55, 18);
-            this.label20.TabIndex = 33;
-            this.label20.Text = "வகை ";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.textBox20.Location = new System.Drawing.Point(551, 27);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(96, 20);
+            this.textBox20.TabIndex = 48;
             // 
-            // label21
+            // comboBox3
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(215, 4);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(153, 18);
-            this.label21.TabIndex = 34;
-            this.label21.Text = "பொருளின் விபரம் ";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "பொன் ",
+            "வெள்ளி ",
+            "பித்தளை ",
+            "எவர் சில்வர் "});
+            this.comboBox3.Location = new System.Drawing.Point(37, 25);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(110, 21);
+            this.comboBox3.TabIndex = 47;
             // 
-            // label22
+            // textBox21
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(447, 4);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(71, 18);
-            this.label22.TabIndex = 35;
-            this.label22.Text = "குறியீடு ";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label22.Click += new System.EventHandler(this.label22_Click);
+            this.textBox21.Location = new System.Drawing.Point(659, 27);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(96, 20);
+            this.textBox21.TabIndex = 46;
             // 
-            // label23
+            // textBox19
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(559, 4);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 18);
-            this.label23.TabIndex = 36;
-            this.label23.Text = "உருப்படி ";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label23.Click += new System.EventHandler(this.label23_Click);
+            this.textBox19.Location = new System.Drawing.Point(421, 27);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(124, 20);
+            this.textBox19.TabIndex = 44;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(761, 27);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(211, 20);
+            this.textBox18.TabIndex = 43;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(168, 27);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(247, 20);
+            this.textBox17.TabIndex = 42;
             // 
             // label24
             // 
@@ -646,214 +782,55 @@
             this.label25.Text = "கிராம் ";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox17
+            // label23
             // 
-            this.textBox17.Location = new System.Drawing.Point(168, 27);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(247, 20);
-            this.textBox17.TabIndex = 42;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(559, 4);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(79, 18);
+            this.label23.TabIndex = 36;
+            this.label23.Text = "உருப்படி ";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
-            // textBox18
+            // label22
             // 
-            this.textBox18.Location = new System.Drawing.Point(761, 27);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(211, 20);
-            this.textBox18.TabIndex = 43;
-            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(447, 4);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(71, 18);
+            this.label22.TabIndex = 35;
+            this.label22.Text = "குறியீடு ";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
-            // textBox19
+            // label21
             // 
-            this.textBox19.Location = new System.Drawing.Point(421, 27);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(124, 20);
-            this.textBox19.TabIndex = 44;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(215, 4);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(153, 18);
+            this.label21.TabIndex = 34;
+            this.label21.Text = "பொருளின் விபரம் ";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox21
+            // label20
             // 
-            this.textBox21.Location = new System.Drawing.Point(659, 27);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(96, 20);
-            this.textBox21.TabIndex = 46;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "பொன் ",
-            "வெள்ளி ",
-            "பித்தளை ",
-            "எவர் சில்வர் "});
-            this.comboBox3.Location = new System.Drawing.Point(37, 25);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(110, 21);
-            this.comboBox3.TabIndex = 47;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(-2, 573);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(131, 15);
-            this.label26.TabIndex = 42;
-            this.label26.Text = "மொத்த உருப்படி  ";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(134, 570);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(134, 22);
-            this.textBox22.TabIndex = 41;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(134, 539);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(134, 22);
-            this.textBox23.TabIndex = 40;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(78, 541);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(54, 15);
-            this.label27.TabIndex = 39;
-            this.label27.Text = "கிராம் ";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(9, 420);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(982, 112);
-            this.dataGridView2.TabIndex = 46;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(282, 575);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(110, 15);
-            this.label28.TabIndex = 50;
-            this.label28.Text = "வட்டி தொகை   ";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(400, 573);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(134, 22);
-            this.textBox24.TabIndex = 49;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(399, 536);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(134, 22);
-            this.textBox25.TabIndex = 48;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(288, 539);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(101, 15);
-            this.label29.TabIndex = 47;
-            this.label29.Text = "வட்டி விகிதம் ";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(571, 579);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(112, 15);
-            this.label30.TabIndex = 54;
-            this.label30.Text = "ரசீது  தொகை   ";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(689, 576);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(134, 22);
-            this.textBox26.TabIndex = 53;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(689, 536);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(134, 22);
-            this.textBox27.TabIndex = 52;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(548, 539);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(142, 15);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "பொருளின் மதிப்பு  ";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(835, 539);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(166, 26);
-            this.label32.TabIndex = 55;
-            this.label32.Text = "கொடுக்கப்பட வேண்டிய \r\n                 தொகை  ";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(846, 576);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(134, 22);
-            this.textBox28.TabIndex = 54;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(551, 27);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(96, 20);
-            this.textBox20.TabIndex = 48;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Location = new System.Drawing.Point(1066, 291);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.kryptonButton1.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.Size = new System.Drawing.Size(209, 33);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 7;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
-            this.kryptonButton1.TabIndex = 26;
-            this.kryptonButton1.Values.Text = "    சேர்க்க ";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(70, 3);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 18);
+            this.label20.TabIndex = 33;
+            this.label20.Text = "வகை ";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(1169, 347);
+            this.kryptonButton4.Location = new System.Drawing.Point(1169, 409);
             this.kryptonButton4.Name = "kryptonButton4";
             this.kryptonButton4.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton4.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -877,7 +854,7 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(1055, 347);
+            this.kryptonButton3.Location = new System.Drawing.Point(1055, 409);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -900,7 +877,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1169, 398);
+            this.kryptonButton2.Location = new System.Drawing.Point(1169, 460);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -924,7 +901,7 @@
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(1050, 398);
+            this.kryptonButton5.Location = new System.Drawing.Point(1050, 460);
             this.kryptonButton5.Name = "kryptonButton5";
             this.kryptonButton5.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.kryptonButton5.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -933,7 +910,7 @@
             this.kryptonButton5.Size = new System.Drawing.Size(95, 33);
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.kryptonButton5.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton5.StateCommon.Back.Image")));
+            this.kryptonButton5.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Form;
             this.kryptonButton5.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
             this.kryptonButton5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -943,7 +920,7 @@
             this.kryptonButton5.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.kryptonButton5.StateTracking.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton5.TabIndex = 35;
-            this.kryptonButton5.Values.Text = "  தேட";
+            this.kryptonButton5.Values.Text = "நீக்க ";
             // 
             // Loan_Form
             // 
@@ -956,7 +933,6 @@
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton4);
             this.Controls.Add(this.kryptonButton3);
-            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -965,6 +941,7 @@
             this.Text = "LoanForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -972,7 +949,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1050,7 +1026,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.TextBox textBox20;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
