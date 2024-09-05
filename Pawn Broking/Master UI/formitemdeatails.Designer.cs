@@ -123,6 +123,7 @@
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "   மாற்ற ";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -191,6 +192,9 @@
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.Size = new System.Drawing.Size(505, 204);
             this.dgvItems.TabIndex = 0;
+            this.dgvItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItems_CellClick_1);
+            this.dgvItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItems_CellContentClick_1);
+            this.dgvItems.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvItems_RowHeaderMouseClick_1);
             // 
             // txtboxSearch
             // 
@@ -218,7 +222,7 @@
             this.panelFind.Controls.Add(this.txtboxSearch);
             this.panelFind.Controls.Add(this.lblSearch);
             this.panelFind.Controls.Add(this.dgvItems);
-            this.panelFind.Location = new System.Drawing.Point(12, 294);
+            this.panelFind.Location = new System.Drawing.Point(12, 281);
             this.panelFind.Name = "panelFind";
             this.panelFind.Size = new System.Drawing.Size(550, 280);
             this.panelFind.TabIndex = 13;
@@ -240,6 +244,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonTextBox1.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonTextBox1.StateCommon.Border.Rounding = 6;
             this.kryptonTextBox1.StateCommon.Border.Width = 1;
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -254,7 +259,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(574, 321);
-            this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.panelFind);
             this.Controls.Add(this.cmbitemtype);
             this.Controls.Add(this.btnReset);
@@ -267,6 +271,7 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.kryptonTextBox1);
             this.Name = "formitemdeatails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item Detail";
