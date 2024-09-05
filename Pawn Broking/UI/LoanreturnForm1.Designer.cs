@@ -386,11 +386,11 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(15, 24);
+            this.panel1.Location = new System.Drawing.Point(14, 24);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(6);
-            this.panel1.Size = new System.Drawing.Size(990, 38);
+            this.panel1.Size = new System.Drawing.Size(991, 38);
             this.panel1.TabIndex = 50;
             // 
             // panel4
