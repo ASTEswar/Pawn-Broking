@@ -89,7 +89,9 @@
     <Compile Include="Accounts UI\BanktransactionForm1.Designer.cs">
       <DependentUpon>BanktransactionForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLL\EditPasswordBLL.cs" />
     <Compile Include="BLL\ItemDetailBLL.cs" />
+    <Compile Include="DAL\EditPasswordDAL.cs" />
     <Compile Include="DAL\ItemDetailDAL.cs" />
     <Compile Include="Master UI\Custom_Details_Change.cs">
       <SubType>Form</SubType>
@@ -114,6 +116,12 @@
     </Compile>
     <Compile Include="Accounts Report UI\DaybookForm1.Designer.cs">
       <DependentUpon>DaybookForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master UI\Edit_Password_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master UI\Edit_Password_Form.Designer.cs">
+      <DependentUpon>Edit_Password_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Master UI\loanForm1.cs">
       <SubType>Form</SubType>
@@ -240,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accounts Report UI\DaybookForm1.resx">
       <DependentUpon>DaybookForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master UI\Edit_Password_Form.resx">
+      <DependentUpon>Edit_Password_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master UI\loanForm1.resx">
       <DependentUpon>loanForm1.cs</DependentUpon>

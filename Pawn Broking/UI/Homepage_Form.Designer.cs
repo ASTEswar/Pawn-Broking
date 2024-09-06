@@ -63,6 +63,7 @@
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.editPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,7 +195,7 @@
             // 
             this.loanToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.loanToolStripMenuItem.Text = "Loan";
             this.loanToolStripMenuItem.Click += new System.EventHandler(this.loanToolStripMenuItem_Click);
             // 
@@ -202,35 +203,35 @@
             // 
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
             this.toolStripMenuItem2.Text = "Photo";
             // 
             // loanDetailsToolStripMenuItem
             // 
             this.loanDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loanDetailsToolStripMenuItem.Name = "loanDetailsToolStripMenuItem";
-            this.loanDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loanDetailsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.loanDetailsToolStripMenuItem.Text = "Loan details";
             // 
             // actionDetailsToolStripMenuItem
             // 
             this.actionDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionDetailsToolStripMenuItem.Name = "actionDetailsToolStripMenuItem";
-            this.actionDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.actionDetailsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.actionDetailsToolStripMenuItem.Text = "Action details";
             // 
             // handLoanToolStripMenuItem
             // 
             this.handLoanToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.handLoanToolStripMenuItem.Name = "handLoanToolStripMenuItem";
-            this.handLoanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.handLoanToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.handLoanToolStripMenuItem.Text = "Hand Loan";
             // 
             // handLoanReturnToolStripMenuItem
             // 
             this.handLoanReturnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.handLoanReturnToolStripMenuItem.Name = "handLoanReturnToolStripMenuItem";
-            this.handLoanReturnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.handLoanReturnToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.handLoanReturnToolStripMenuItem.Text = "Hand Loan Return";
             // 
             // accountsToolStripMenuItem
@@ -348,6 +349,8 @@
             // 
             // settingToolStripMenuItem
             // 
+            this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editPasswordToolStripMenuItem});
             this.settingToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
@@ -417,6 +420,13 @@
             this.button2.Text = "   மாற்ற ";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // editPasswordToolStripMenuItem
+            // 
+            this.editPasswordToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editPasswordToolStripMenuItem.Name = "editPasswordToolStripMenuItem";
+            this.editPasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editPasswordToolStripMenuItem.Text = "Edit Password";
+            // 
             // Homepage_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -474,5 +484,6 @@
         private System.Windows.Forms.ToolStripMenuItem customerBalanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem partyBalanceToolStripMenuItem;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.ToolStripMenuItem editPasswordToolStripMenuItem;
     }
 }
