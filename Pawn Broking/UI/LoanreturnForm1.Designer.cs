@@ -750,6 +750,7 @@
             this.kryptonButton5.StateTracking.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton5.TabIndex = 57;
             this.kryptonButton5.Values.Text = "நீக்க ";
+            this.kryptonButton5.Click += new System.EventHandler(this.kryptonButton5_Click);
             // 
             // kryptonButton2
             // 
@@ -774,6 +775,7 @@
             this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.kryptonButton2.TabIndex = 56;
             this.kryptonButton2.Values.Text = "   ரத்து செய்ய ";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonButton4
             // 
@@ -797,6 +799,7 @@
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.Lime;
             this.kryptonButton4.TabIndex = 55;
             this.kryptonButton4.Values.Text = "  சேமிக்க ";
+            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
             // 
             // kryptonButton3
             // 
@@ -809,7 +812,6 @@
             this.kryptonButton3.Size = new System.Drawing.Size(90, 33);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.kryptonButton3.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton3.StateCommon.Back.Image")));
             this.kryptonButton3.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
             this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -820,6 +822,7 @@
             this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.Yellow;
             this.kryptonButton3.TabIndex = 54;
             this.kryptonButton3.Values.Text = " தேட ";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // Loan2returnForm1
             // 

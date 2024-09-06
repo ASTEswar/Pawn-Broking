@@ -36,5 +36,25 @@ namespace Pawn_Broking.UI
         {
 
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -198,6 +198,7 @@
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.kryptonButton4.TabIndex = 86;
             this.kryptonButton4.Values.Text = "    Pending  Deatails ";
+            this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);
             // 
             // LoanactionrptForm1
             // 
