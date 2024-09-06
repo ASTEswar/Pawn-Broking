@@ -110,15 +110,5 @@ namespace Pawn_Broking.UI
             PartybalanceForm1 partybalanceForm1 = new PartybalanceForm1();
             partybalanceForm1.Show();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonButton6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

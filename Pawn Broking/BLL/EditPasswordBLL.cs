@@ -8,7 +8,7 @@ namespace Pawn_Broking.BLL
 {
     internal class EditPasswordBLL
     {
-        public int EPId { get; set; }
+        public int Eid { get; set; }
         public string EPassword { get; set; }
     }
 }

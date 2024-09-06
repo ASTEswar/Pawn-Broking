@@ -11,18 +11,18 @@ namespace Pawn_Broking.DAL
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
         #region Validate Password from Database
-        public bool ValidatePassword(int EPId, string EPassword)
+        public bool ValidatePassword(int Eid, string EPassword)
         {
             SqlConnection conn = new SqlConnection(myconnstrng);
             bool isValid = false;
 
             try
             {
-                string sql = "SELECT * FROM EditPassword WHERE EPId = @EPId AND EPassword = @EPassword";
+                string sql = "SELECT * FROM EditPassword WHERE Eid = @Eid AND EPassword = @EPassword";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                cmd.Parameters.AddWithValue("@EPId", EPId);
+                cmd.Parameters.AddWithValue("@Eid", Eid);
                 cmd.Parameters.AddWithValue("@EPassword", EPassword);
 
                 conn.Open();

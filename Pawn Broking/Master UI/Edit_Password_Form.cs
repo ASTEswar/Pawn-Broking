@@ -35,7 +35,7 @@ namespace Pawn_Broking.Master_UI
             }
 
             // Fill BLL object with data
-            passwordBLL.EPId = userId;
+            passwordBLL.Eid = userId;
             passwordBLL.EPassword = txtName.Text.Trim();
 
             // Call DAL to check if password is valid
