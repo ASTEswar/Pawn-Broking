@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pawn_Broking.Master_UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -109,6 +110,13 @@ namespace Pawn_Broking.UI
         {
             PartybalanceForm1 partybalanceForm1 = new PartybalanceForm1();
             partybalanceForm1.Show();
+        }
+
+        private void editPasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit_Password_Form editpass = new Edit_Password_Form();
+            editpass.Show();
+
         }
     }
 }

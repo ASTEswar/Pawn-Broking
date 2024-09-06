@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pawn_Broking.BLL;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,42 +11,110 @@ namespace Pawn_Broking.DAL
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
-        #region Validate Password from Database
-        public bool ValidatePassword(int Eid, string EPassword)
+        #region Select Data from Database
+        public DataTable Select()
         {
             SqlConnection conn = new SqlConnection(myconnstrng);
-            bool isValid = false;
+            DataTable dt = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM PasswordEdit";
+                SqlCommand cmd = new SqlCommand(sql, conn);          
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion
+        public bool Insert(EditPasswordBLL edit)
+        {
+            bool isSucces = false;
+
+            SqlConnection conn = new SqlConnection(myconnstrng);
 
             try
             {
-                string sql = "SELECT * FROM EditPassword WHERE Eid = @Eid AND EPassword = @EPassword";
+                string sql = "INSERT INTO PasswordEdit (Edit_Password) VALUES (@Edit_Password)";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                cmd.Parameters.AddWithValue("@Eid", Eid);
-                cmd.Parameters.AddWithValue("@EPassword", EPassword);
-
+                cmd.Parameters.AddWithValue("@Edit_Password", edit.EPassword);
+                
                 conn.Open();
 
-                SqlDataReader reader = cmd.ExecuteReader();
+                int rows = cmd.ExecuteNonQuery();
 
-                if (reader.HasRows)
+                if (rows > 0)
                 {
-                    isValid = true;  
+                    isSucces = true;
+                }
+                else
+                {
+                    isSucces = false;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message);
             }
             finally
             {
-               
                 conn.Close();
             }
 
-            return isValid;
+            return isSucces;
         }
-        #endregion
+        public bool loginCheck(EditPasswordBLL l)
+        {
+            bool isSuccess = false;
+
+            // Step 1: Connect Database
+            using (SqlConnection conn = new SqlConnection(myconnstrng))
+            {
+                try
+                {
+                    string sql = "SELECT * FROM PasswordEdit WHERE Edit_Password=@Edit_Password AND password=@password";
+
+                    // Step 2: Create SqlCommand object
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@Edit_Password", l.EPassword);
+
+                    // Step 3: Open connection and execute query
+                    conn.Open();
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd); // Pass cmd to the SqlDataAdapter constructor
+
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    // Step 4: Check if any rows were returned
+                    if (dt.Rows.Count > 0)
+                    {
+                        // Login successful
+                        isSuccess = true;
+                    }
+                    else
+                    {
+                        // Login failed
+                        isSuccess = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+            return isSuccess;
+        }
     }
 }

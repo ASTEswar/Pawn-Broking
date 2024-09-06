@@ -58,12 +58,12 @@
             this.partyBalanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.editPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,7 +149,7 @@
             // 
             this.itemDeatailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.itemDeatailsToolStripMenuItem.Name = "itemDeatailsToolStripMenuItem";
-            this.itemDeatailsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.itemDeatailsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.itemDeatailsToolStripMenuItem.Text = "Item Details";
             this.itemDeatailsToolStripMenuItem.Click += new System.EventHandler(this.itemDeatailsToolStripMenuItem_Click);
             // 
@@ -157,7 +157,7 @@
             // 
             this.customerSearchEngineToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerSearchEngineToolStripMenuItem.Name = "customerSearchEngineToolStripMenuItem";
-            this.customerSearchEngineToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.customerSearchEngineToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.customerSearchEngineToolStripMenuItem.Text = "Customer Search Engine";
             this.customerSearchEngineToolStripMenuItem.Click += new System.EventHandler(this.customerSearchEngineToolStripMenuItem_Click);
             // 
@@ -165,7 +165,7 @@
             // 
             this.customerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.customerToolStripMenuItem.Text = "Customer details Change";
             this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
@@ -173,7 +173,7 @@
             // 
             this.ledgerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ledgerToolStripMenuItem.Name = "ledgerToolStripMenuItem";
-            this.ledgerToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.ledgerToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.ledgerToolStripMenuItem.Text = "Ledger";
             this.ledgerToolStripMenuItem.Click += new System.EventHandler(this.ledgerToolStripMenuItem_Click);
             // 
@@ -356,6 +356,14 @@
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
+            // editPasswordToolStripMenuItem
+            // 
+            this.editPasswordToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editPasswordToolStripMenuItem.Name = "editPasswordToolStripMenuItem";
+            this.editPasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editPasswordToolStripMenuItem.Text = "Edit Password";
+            this.editPasswordToolStripMenuItem.Click += new System.EventHandler(this.editPasswordToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -419,13 +427,6 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "   மாற்ற ";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // editPasswordToolStripMenuItem
-            // 
-            this.editPasswordToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editPasswordToolStripMenuItem.Name = "editPasswordToolStripMenuItem";
-            this.editPasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editPasswordToolStripMenuItem.Text = "Edit Password";
             // 
             // Homepage_Form
             // 

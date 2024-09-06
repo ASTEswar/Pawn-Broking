@@ -14,18 +14,15 @@ using System.Xml.Linq;
 namespace Pawn_Broking.Master_UI
 {
     public partial class Edit_Password_Form : Form
-    {
-        private int userId;
-        private string KKey;
-
+    {      
         EditPasswordBLL passwordBLL = new EditPasswordBLL();
         EditPasswordDAL passwordDAL = new EditPasswordDAL();
         public Edit_Password_Form()
         {
             InitializeComponent();
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
+         
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
@@ -33,30 +30,20 @@ namespace Pawn_Broking.Master_UI
                 txtName.Focus();
                 return;
             }
-     
-            passwordBLL.Eid = userId;
-            passwordBLL.EPassword = txtName.Text.Trim();
-         
-            bool isPasswordValid = passwordDAL.ValidatePassword(passwordBLL);
 
-            if (isPasswordValid)
+            passwordBLL.EPassword = txtName.Text;
+
+            bool success = passwordDAL.Insert(passwordBLL);
+
+            if (success)
             {
-                KKey = "Y"; 
-                MessageBox.Show("Password accepted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); 
+                MessageBox.Show("New Password Created Successfully.");
+
             }
             else
             {
-                KKey = "N"; 
-                MessageBox.Show("Incorrect password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtName.Clear();
-                txtName.Focus();
+                MessageBox.Show("Failed to Add New Password.");
             }
-        }
-
-        private void Edit_Password_Form_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

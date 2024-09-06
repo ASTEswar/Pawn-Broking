@@ -119,18 +119,6 @@ namespace Pawn_Broking.DAL
             return isSucces;
         }
 
-        // Method to Fetch ItemDetail by ItemCode
-        //public DataTable GetItemDetailByCode(int itemCode)
-        //{
-        //    string query = "SELECT * FROM ItemDetail WHERE ItemCode=@ItemCode";
-        //    using (SqlCommand cmd = new SqlCommand(query, conn))
-        //    {
-        //        cmd.Parameters.AddWithValue("@ItemCode", itemCode);
-        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-        //        DataTable dt = new DataTable();
-        //        adapter.Fill(dt);
-        //        return dt;
-        //    }
-        //}
+     
     }
 }

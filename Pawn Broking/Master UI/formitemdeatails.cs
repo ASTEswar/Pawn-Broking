@@ -176,27 +176,40 @@ namespace Pawn_Broking.UI
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //item.ItemCode = int.Parse(txtID.Text);
-            //item.ItemName = txtItemName.Text;
-            //item.ItemType = cmbitemtype.Text;
+            btnSave.Enabled = true;
+        }
 
-            //bool success = dal.Update(item);
+        EditPasswordBLL EditPasswordBLL = new EditPasswordBLL();
+        public static string loggedIn;
 
-            //if (success)
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            //item.Username = txtUsername.Text;
+            //l.Password = txtPassword.Text;
+            //l.User_type = cmbUserType.Text;
+
+            //// Checking the login credentials
+            //bool success = dal.loginCheck(l);
+            //if (success == true)
             //{
-            //    MessageBox.Show("Product Updated Successfully");
-            //    Clear();
+            //    // Login Success
+            //    MessageBox.Show("Login Successful");
+            //    loggedIn = l.Username;
 
-            //    DataTable dt = dal.Select();
-            //    dgvItems.DataSource = dt;
+            //    // Open Admin Dashboard and pass user type
+            //    FrmAdminDashboard adminDashboard = new FrmAdminDashboard(l.User_type);
+            //    adminDashboard.Show();
+            //    this.Hide();
             //}
             //else
             //{
-            //    MessageBox.Show("Failed to Update Product");
+            //    // Login Failed
+            //    MessageBox.Show("Login Failed. Please Try Again");
+            //    txtUsername.Text = "";
+            //    txtPassword.Text = "";
+            //    cmbUserType.Text = "";
             //}
-            btnSave.Enabled = true;
         }
-       
 
     }
 }
