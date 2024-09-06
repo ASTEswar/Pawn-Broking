@@ -33,23 +33,21 @@ namespace Pawn_Broking.Master_UI
                 txtName.Focus();
                 return;
             }
-
-            // Fill BLL object with data
+     
             passwordBLL.Eid = userId;
             passwordBLL.EPassword = txtName.Text.Trim();
-
-            // Call DAL to check if password is valid
+         
             bool isPasswordValid = passwordDAL.ValidatePassword(passwordBLL);
 
             if (isPasswordValid)
             {
-                KKey = "Y"; // Set KKey to 'Y' for correct password
+                KKey = "Y"; 
                 MessageBox.Show("Password accepted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); // Close the form after success
+                this.Close(); 
             }
             else
             {
-                KKey = "N"; // Password is incorrect
+                KKey = "N"; 
                 MessageBox.Show("Incorrect password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtName.Clear();
                 txtName.Focus();
